@@ -5,7 +5,7 @@ This project serves the purpose of providing a baseline, for REST services writt
 
 ### Blueprint Features
 * **Enabled web security - JWT integration**: Provides a JWT token-based authorization service.
+* **DTO pattern**: Provides automatic mapping  between `Entity` and `DTO` using `ModelMapper` library.
 
 ### Database Usage
-
 1. Change the properties in `application.properties` to match your database connection and credentials that you will be using.
