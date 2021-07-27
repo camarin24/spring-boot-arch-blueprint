@@ -30,11 +30,6 @@ public class SignInController {
 
     @PostMapping(path = "/login")
     public AuthResponseDto login(@RequestBody AuthDto authRequest) throws Exception {
-        try {
-            return this.authService.login(authRequest);
-        } catch (Exception exc) {
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, exc.getMessage(), exc);
-        }
+        return this.authService.login(authRequest);
     }
 }
